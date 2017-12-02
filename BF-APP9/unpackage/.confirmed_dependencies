@@ -1,0 +1,268 @@
+{
+  "index.html": {
+    "resources": [
+      "js/mui.min.js",
+      "refresh.html",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "css/mui.css",
+      "js/index.js",
+      "home.html",
+      "js/castapp.js",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "video.html",
+      "follow.html",
+      "me.html",
+      "refresh.html",
+      "home.html"
+    ]
+  },
+  "refresh.html": {
+    "resources": [
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "home.html": {
+    "resources": [
+      "css/mui.min.css",
+      "js/mui.min.js",
+      "js/mui.js",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "js/mui.picker.js",
+      "js/mui.poppicker.js",
+      "js/city.data.js",
+      "js/city.data-3.js",
+      "js/castapp.js",
+      "css/slide.nav.css",
+      "list.html",
+      "js/webviewGroup.js",
+      "list1.html",
+      "js/mui.pullToRefresh.js",
+      "js/home.js",
+      "css/mui.css",
+      "js/list-refresh.js",
+      "js/script.js"
+    ],
+    "refer": [
+      "list.html",
+      "video.html",
+      "follow.html",
+      "me.html",
+      "list2.html",
+      "list1.html",
+      "list4.html",
+      "list5.html",
+      "list3.html",
+      "detail.html"
+    ]
+  },
+  "list.html": {
+    "resources": [
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/style.css",
+      "js/mui.js"
+    ],
+    "refer": []
+  },
+  "list2.html": {
+    "resources": [
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/style.css"
+    ],
+    "refer": []
+  },
+  "list1.html": {
+    "resources": [
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/mui.js"
+    ],
+    "refer": []
+  },
+  "video.html": {
+    "resources": [
+      "css/mui.min.css",
+      "js/castapp.js",
+      "js/mui.pullToRefresh.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "css/mui.css",
+      "js/home.js",
+      "js/video.js",
+      "js/list-refresh.js",
+      "js/script.js"
+    ],
+    "refer": [
+      "detail.html",
+      "detail_video.html"
+    ]
+  },
+  "me.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "js/castapp.js",
+      "js/mui.pullToRefresh.js",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "css/mui.css",
+      "js/home.js",
+      "js/mui.js"
+    ],
+    "refer": []
+  },
+  "follow.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/style.css",
+      "css/mui.css"
+    ],
+    "refer": []
+  },
+  "detail.html": {
+    "resources": [
+      "fonts/mui.ttf",
+      "css/style.css",
+      "css/mui.css",
+      "js/mui.js",
+      "js/detail.js",
+      "js/common.js",
+      "js/castapp.js"
+    ],
+    "refer": []
+  },
+  "detail_video.html": {
+    "resources": [
+      "css/mui.min.css",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "js/mui.js",
+      "css/mui.css",
+      "js/mui.pullToRefresh.js",
+      "reply.html",
+      "js/video_detail.js",
+      "js/detail_video.js",
+      "js/castapp.js",
+      "detail_video_comment.html",
+      "js/script.js",
+      "detail_video_inner.html"
+    ],
+    "refer": [
+      "reply_list.html",
+      "reply.html",
+      "detail_video_comment.html",
+      "detail_video_inner.html"
+    ]
+  },
+  "reply_list.html": {
+    "resources": [
+      "js/reply_list.js",
+      "js/mui.pullToRefresh.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/style.css",
+      "js/castapp.js",
+      "reply_list_inner.html",
+      "js/script.js",
+      "css/icons-extra.css"
+    ],
+    "refer": [
+      "reply_list_inner.html"
+    ]
+  },
+  "reply.html": {
+    "resources": [
+      "js/reply.js",
+      "css/mui.min.css",
+      "js/mui.min.js",
+      "js/mui.pullToRefresh.js",
+      "css/style.css",
+      "fonts/mui.ttf",
+      "js/castapp.js",
+      "reply_inner.html",
+      "js/script.js",
+      "js/mui.js"
+    ],
+    "refer": [
+      "reply_list.html",
+      "reply_inner.html"
+    ]
+  },
+  "detail0.html": {
+    "resources": [
+      "js/castapp.js",
+      "fonts/mui.ttf",
+      "js/mui.js",
+      "css/mui.css",
+      "css/style.css"
+    ],
+    "refer": []
+  },
+  "detail_video_comment.html": {
+    "resources": [
+      "js/detail_video_comment.js",
+      "js/castapp.js",
+      "css/style.css",
+      "js/mui.js",
+      "css/mui.css",
+      "fonts/mui.ttf"
+    ],
+    "refer": [
+      "reply.html"
+    ]
+  },
+  "reply_inner.html": {
+    "resources": [
+      "js/castapp.js",
+      "js/mui.min.js",
+      "js/reply.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "js/reply_inner.js",
+      "js/script.js",
+      "js/mui.js",
+      "fonts/mui.ttf"
+    ],
+    "refer": [
+      "reply_list.html"
+    ]
+  },
+  "reply_list_inner.html": {
+    "resources": [
+      "js/reply_list_inner.js",
+      "js/castapp.js",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "js/mui.js",
+      "js/script.js",
+      "fonts/mui.ttf"
+    ]
+  },
+  "detail_video_inner.html": {
+    "resources": [
+      "js/detail_video_inner.js",
+      "js/castapp.js",
+      "css/style.css",
+      "js/mui.js",
+      "css/mui.css",
+      "js/script.js",
+      "fonts/mui.ttf",
+      "fonts/mui-icons-extra.ttf",
+      "css/icons-extra.css"
+    ],
+    "refer": [
+      "reply.html",
+      "detail.html",
+      "detail_video.html"
+    ]
+  }
+}

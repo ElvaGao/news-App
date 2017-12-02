@@ -1,0 +1,68 @@
+{
+	"index.html": {
+		"resources": [
+			"js/mui.min.js",
+			"refresh.html",
+			"fonts/mui.ttf",
+			"css/style.css",
+			"css/mui.css",
+			"js/index.js",
+			"home.html",
+			"js/castapp.js"
+		],
+		"refer": [
+			"video.html",
+			"follow.html",
+			"me.html",
+			"refresh.html",
+			"home.html"
+		]
+	},
+	"refresh.html": {
+		"resources": [
+			"css/mui.min.css"
+		]
+	},
+	"home.html": {
+		"resources": [
+			"css/mui.min.css",
+			"js/mui.min.js",
+			"js/mui.js",
+			"fonts/mui.ttf",
+			"css/style.css",
+			"js/mui.picker.js",
+			"js/mui.poppicker.js",
+			"js/city.data.js",
+			"js/city.data-3.js",
+			"js/castapp.js",
+			"css/slide.nav.css",
+			"list.html"
+		],
+		"refer": [
+			"list.html",
+			"video.html",
+			"follow.html",
+			"me.html",
+			"list2.html",
+			"list1.html"
+		]
+	},
+	"list.html": {
+		"resources": [
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/style.css",
+			"js/mui.js"
+		]
+	},
+	"list2.html": {
+		"resources": [
+			"fonts/mui.ttf"
+		]
+	},
+	"list1.html": {
+		"resources": [
+			"fonts/mui.ttf"
+		]
+	}
+}

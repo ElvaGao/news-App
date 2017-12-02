@@ -1,0 +1,252 @@
+/*index*/
+.mui-bar-tab .mui-active .mui-icon ~ .mui-tab-label{
+	color: #000;
+}
+.mui-bar-tab .mui-active .mui-icon{
+	color: #ffce30;
+}
+.mui-bar-tab .mui-active .mui-icon,
+.mui-bar-tab .mui-tab-item .mui-icon ~ .mui-tab-label{
+	transition: color 0.3s ease;
+}
+.mui-fullscreen{
+	background-color: #fff;
+}
+/*main*/
+.mui-pull-top-tips {
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	margin-left: -25px;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	z-index: 1;
+}
+.mui-bar~.mui-pull-top-tips {
+	top: 24px;
+}
+.mui-pull-top-wrapper {
+	width: 42px;
+	height: 42px;
+	display: block;
+	text-align: center;
+	background-color: #efeff4;
+	border: 1px solid #ddd;
+	border-radius: 25px;
+	background-clip: padding-box;
+	box-shadow: 0 4px 10px #bbb;
+	overflow: hidden;
+}
+.mui-pull-top-tips.mui-transitioning {
+	-webkit-transition-duration: 200ms;
+	transition-duration: 200ms;
+}
+.mui-pull-top-tips .mui-pull-loading {
+	margin: 0;
+}
+.mui-pull-top-wrapper .mui-icon,
+.mui-pull-top-wrapper .mui-spinner {
+	margin-top: 7px;
+}
+.mui-pull-bottom-tips {
+	text-align: center;
+	background-color: #efeff4;
+	font-size: 15px;
+	line-height: 40px;
+	color: #777;
+}
+.main-video{
+	height: 200px;
+	background-color: #eee;
+}
+.m-detail{
+	margin: 10px 0 -8px 0;
+	font-size: 0;
+}
+.m-website{
+	margin-right: 5px;
+}
+.m-detail span{
+	font-size: 12px;
+	color: #666;
+	margin-left: 3px;
+	line-height: 50px;
+}
+.mui-icon-trash{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}
+.mui-icon-trash:before{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+}
+.one-picture-right .mui-icon-trash:before{
+	padding-right: 15px;
+}
+.mui-table-view .mui-media, .mui-table-view .mui-media-body{
+	text-overflow: ellipsis;
+}
+.mui-media-body{
+	margin-bottom: 3px;
+	max-height: 40px;
+}
+.mui-table-view-cell > a:not(.mui-btn){
+	margin-bottom: -22px;
+}
+.mui-table-view-cell > a:not(.mui-btn).mui-active{
+	background-color: transparent;
+}
+.m-list .mui-table-view-cell{
+	padding-bottom: 0;
+}
+#sliderSegmentedControl .mui-control-item{/*tabbar*/
+	position: relative;
+	height: 37px;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+	color: #000;
+	font-weight: bold;
+	line-height: 36px;
+}
+#sliderSegmentedControl .mui-control-item.mui-active:after{
+	content: "";
+	width: 100%;
+	height: 2px;
+	position: absolute;
+	bottom: 0;
+	background-color: #ff0;
+	left: 0;
+}
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted ~ .mui-slider-group .mui-slider-item{
+	border: none;
+}
+#sliderSegmentedControl{
+	border-bottom: 1px solid #e6e6e6;
+}
+.operation{/*底部操作框*/
+	position: absolute;
+	width: 80%;
+	height: 261px;
+	left: 10%;
+	top: 25%;
+	background-color: #fefefe;
+	border-radius: 6px;
+	padding: 20px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	display: none;
+	z-index: 999;
+}
+.operation.mui-active{
+	display: block;
+}
+.operation button{
+	width: 100%;
+	display: block;
+	height: 40px;
+	text-align: center;
+	background-color: #eee;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+.operation h3{
+	text-align: center;
+	font-size: 16px;
+	font-weight: normal;
+	color: #666;
+}
+
+.mui-backdrop{
+	z-index: 90;
+}
+.mui-icon-trash:before{
+	font-size: 18px;
+}
+.one-picture img{/*列表页面图片-1张，3张，视频等*/
+	max-width: 100%;
+	height: 160px;/*delete*/
+	background-color: #eee;
+}
+.pictures-list{
+	font-size: 0;
+}
+.three-picture img{
+	max-width: 30%;
+	margin-right: 5%;
+	height: 100px;/*delete*/
+	background-color: #eee;
+}
+.three-picture img:last-child{
+	margin: 0;
+}
+.one-picture-right img{
+	background-color: #eee;
+}
+ .mui-table-view .one-picture-right a{
+	float: right;
+}
+.mui-slider .mui-slider-group .mui-slider-item .one-picture-right  img,
+ .mui-table-view .one-picture-right .mui-media-object{
+	max-width: 75px;
+	width: 75px;
+	height: 75px;
+}
+.mui-table-view-cell:after{
+	right: 15px;
+}
+/*推荐*/
+.f-list .pictures-list img,
+.f-list .one-picture img{
+	width: 100%;
+}
+.f-list .mui-table-view-cell > a:not(.mui-btn){
+	margin-bottom: -11px;
+}
+.f-list .mui-table-view-cell{
+	padding-bottom: 11px;
+}
+/*me*/
+.me-header{
+	position: relative;
+}
+.mh-back-img{
+	width: 100%;
+	height: 200px;
+	background-color: #ccc;
+	position: relative;
+}
+.portrait{
+	position: absolute;
+	bottom: 0;
+	right: 15px;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	background-color: #eee;
+	margin-bottom: -25px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	overflow: hidden;
+}
+.portrait img{
+	width: 50px;
+	height: 50px;
+}
+.me-list{
+	margin-top: 40px;
+}
+.me-list .mui-table-view-cell > a:not(.mui-btn){
+	margin-bottom: -11px;
+}
+.me-list .mui-icon{
+	font-size: 18px;
+	color: #666;
+	margin-right: 4px;
+}
+.me-list li a span{
+	font-size: 14px;
+	color: #666;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="css/mui.css">
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	
+	<body>
+		<!--头部背景图片开始-->
+		<div class="me-header">
+			<div class="portrait"><img src="#"/></div>
+			<div class="mh-name"><h4>My Name</h4><p>facebook laccount: 1234567</p><p>*connect account</p></div>
+		</div>
+		<!--头部背景图片结束-->
+		<!--设置列表开始-->
+		<ul class="mui-table-view me-list">
+	        <li class="mui-table-view-cell">
+	            <a class="mui-navigate-right">
+	                <span class="mui-icon mui-icon-camera"></span><span>Saved</span>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell">
+	            <a class="mui-navigate-right">
+	                <span class="mui-icon mui-icon-camera"></span><span>Following</span>
+	            </a>
+	        </li>
+	    </ul>
+	    <ul class="mui-table-view me-list">
+	        <li class="mui-table-view-cell">
+	            <a class="mui-navigate-right">
+	                <span class="mui-icon mui-icon-camera"></span><span>Notification</span>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell">
+	            <a class="mui-navigate-right">
+	                <span class="mui-icon mui-icon-camera"></span><span>Settings</span>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell">
+	            <a class="mui-navigate-right">
+	                <span class="mui-icon mui-icon-camera"></span><span>Feedback</span>
+	            </a>
+	        </li>
+	    </ul>
+		<!--设置列表结束-->
+	</body>
+	<script type="text/javascript" src="js/mui.js" ></script>
+	<script type="text/javascript" src="js/castapp.js" ></script>
+	<script>
+		castapp.init();
+		var arr = ['照相机','相册']; //arr里面的title为要弹出的选项内容 
+			
+		//上传头像
+		mui(".portrait")[0].addEventListener("tap",function(){
+			castapp.actionSheet(arr,{
+				succFn:function(data){ //成功回调 
+				    //手机上的图片路径
+					alert(data);
+					//上传后的图片路径
+					alert('http://peipao.dongyixueyuan.com/'+data);
+				},
+				errFn:function(data){ //失败回调
+					alert(data);
+				},
+				//是否开启上传
+				isUpload:true,
+				//上传地址
+				uploadUrl:'http://peipao.dongyixueyuan.com/upload_file.php',
+				
+			})
+		})
+		
+		//更换昵称
+		var turnName = true;//控制器，控制判断是否被点击
+		mui(".mh-name h4")[0].addEventListener("tap",function(){
+			if(turnName){
+				var oldName = this.innerHTML;//存储之前的昵称
+				this.innerHTML = "<input type=\"text\" value=\""+ oldName +"\" />";
+				//当失去焦点后,更昵称成功
+				mui(".mh-name h4 input")[0].addEventListener("blur",function(){
+					mui(".mh-name h4")[0].innerHTML = mui(".mh-name h4 input")[0].value;
+					turnName = true;
+				});
+				turnName = false;
+			}
+		})
+		
+//		mui(".me-list").on("tap","li",function(){
+//			alert(this.indexes())
+//		})
+	</script>
+</html>

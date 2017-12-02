@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="css/mui.css">
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title" id="pageTitle"></h1>
+		</header>
+		<!--内容页面开始-->
+		<div class="mui-content mui-content-padded detail">
+			<!--<iframe src="#" height="1600" frameborder="0" id="iframe" name="iframe"></iframe>-->
+		
+			<div class="mui-content">
+			   <!--文章共分四个部分，深刻阐述了习近平总书记总体国家安全观具有重大的时代意义、理论意义、实践意义和世界意义。第一部分，总体国家安全观承载为实现中华民族伟大复兴提供坚强保障的历史使命，具有鲜明的时代特色。文章指出，总体国家安全观是时代的产物，同时又为时代注入了新的内涵。第二部分，总体国家安全观是我们党关于国家安全理论的重大创新，丰富和发展了中国特色社会主义理论体系。文章指出，总体国家安全观揭示了国家安全的本质和内涵，科学回答了中国这样一个发展中的社会主义大国如何维护和塑造国家安全的基本问题，标志着我们党对国家安全基本规律的认识达到了新高度。第三部分，总体国家安全观是维护和塑造中国特色大国安全的行动指南，具有重大的实践意义。文章强调，总体国家安全观蕴含着中国特色国家安全价值理念、工作思路和机制路径，是指导国家安全工作的科学理论。第四部分，总体国家安全观倡导构建人类命运共同体，具有广泛的包容性，产生了深远的国际影响。文章指出，总体国家安全观所倡导的安全理念，摒弃了零和博弈、绝对安全、结盟理论等旧观念，在国际上树立起一种普遍包容的国家安全理念，体现了中国风格，展示了中国胸怀，彰显了中国智慧。-->
+			</div> 
+		
+		</div>
+		<!--内容页面结束-->
+		
+		<!--script引入-->
+		<script type="text/javascript" src="js/mui.js" ></script><!--mui提供的的js文件-->
+		<script type="text/javascript" src="js/castapp.js" ></script>
+		<script type="text/javascript" src="js/detail.js" ></script><!--本页引入的js文件-->
+		<!--<script type="text/javascript" src="js/common.js"></script>-->
+		<script>
+			mui.plusReady(function(){
+				var self = plus.webview.currentWebview();
+				var baiduWV = plus.webview.create("http://ask.dcloud.net.cn/article/776", "new", {
+				    top: "44px",
+				    bottom: "0px"
+				});
+				var vHeight11 = plus.android.invoke(plus.android.currentWebview(),"getHeight") +"px";
+				var baiduWV1 = plus.webview.create("https://developers.google.com/web/fundamentals/getting-started/codelabs/your-first-pwapp/", "new1", {
+				    top: vHeight11,
+				    bottom: "0px"
+				});
+				
+//				baiduWV.appendJsFile("js/mui.js");//添加Webview窗口预加载js文件
+				self.append(baiduWV);
+				self.append(baiduWV1);
+//				let webHeightStr = webView.stringByEvaluatingJavaScriptFromString("document.body.scrollHeight")
+//				document.body.scrollHeight=plus.android.invoke(plus.android.currentWebview(),(getHeight))
+//				alert(plus.android.invoke(plus.android.currentWebview(),"getHeight"))  
+//				alert(baiduWV.window)
+//				baiduWV.evalJS("var height2 =document.getElementsByTagName(\"body\")[0].clientHeight; plus.webview.currentWebview().setStyle({height:height2});alert(plus.webview.currentWebview().getStyle().height);");
+
+
+
+//				var height2 =document.getElementsByTagName(\"body\")[0].clientHeight;
+//				window.onscroll = function(){check(this)};
+//				var scale = plus.screen.scale;
+//				var vHeight = plus.android.invoke(plus.android.currentWebview(),\"getHeight\");
+//				var screenHeight = vHeight/scale;
+//				function check(ele){
+//					var scrollTopTo = height2-document.body.scrollTop-screenHeight;
+//					if(scrollTopTo<1){console.log(scrollTopTo);}}
+
+
+
+				var str = "window.onscroll = function(){\
+					var height2 =document.getElementsByTagName(\"body\")[0].clientHeight;\
+					var scale = plus.screen.scale;\
+					var vHeight = plus.android.invoke(plus.android.currentWebview(),\"getHeight\");\
+					var screenHeight = vHeight/scale;\
+					var scrollTopTo = height2-document.body.scrollTop-screenHeight;\
+					if(scrollTopTo<screenHeight*2){\
+					document.getElementsByTagName(\"body\")[0].style.paddingBottom = screenHeight + 'px !important';\
+					}\
+					if(scrollTopTo<screenHeight/2){\
+						plus.webview.getWebviewById('new1').setStyle({top: '44px'});\
+						}else{\
+						}}";
+						//plus.webview.currentWebview().setStyle({bottom:(screenHeight)+'px'});
+				//
+				baiduWV.evalJS(str);
+				baiduWV.scroll =  function(){ //Webview窗口页面加载完成事件
+//					alert(111)
+//					var height = plus.android.invoke(plus.android.currentWebview(),"getHeight");
+//					alert(height)
+//					if(scrollTopTo<4){console.log(scrollTopTo);}
+				};
+			})
+			
+//			function load(){
+//				console.log(iframe.window)
+////			}
+//			window.onload = function(){
+////				console.log(document.getElementById('iframe').contentWindow)
+//				console.log(document.getElementById('iframe').contentWindow)
+//			castapp.init();
+//			castapp.openUrl('http://www.castapp.cn');
+			
+		</script>
+		
+		
+		 
+	</body>
+
+</html>

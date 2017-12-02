@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="css/mui.css">
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<!--内容开始-->
+		<div class="mui-content detail-video" style="height: 100%;position: relative;">
+			<!--video内容开始-->
+			<div class="video-top">
+		    		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    		<div class="video-content">
+		    			<video playsinline controls="controls" preload width="100%" height="160" style="object-fit:cover">
+				    		<source src="http://cdn.buzzfond.com/Video/omg-will-this-be-you-singing-without-the-radio/omg-will-this-be-you-singing-without-the-radio_1.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+			<!--video内容结束-->
+		</div>
+		<!--内容结束-->
+		<!--评论开始-->
+		<div class="review-list">
+			<form action="#" method="post">
+				<input type="search" class="mui-input-clear" placeholder="Add a Comment">
+				<p class="rl-input"><span class="mui-icon mui-icon-chat"></span><span class="mui-badge mui-badge-danger">45</span></p>
+				<span class="mui-icon mui-icon-email rl-save"></span>
+				<span class="mui-icon mui-icon-starhalf rl-share"></span>
+			</form>
+		</div>
+		<!--评论结束-->
+		<!--script引入-->
+		<script type="text/javascript" src="js/mui.js" ></script><!--mui提供的的js文件-->
+		<script type="text/javascript" src="js/script.js" ></script><!--存放函数的js文件-->
+		<script src="js/detail_video.js"></script><!--本页引入的js文件-->
+	</body>
+
+</html>

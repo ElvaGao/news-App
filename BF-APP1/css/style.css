@@ -1,0 +1,28 @@
+/*index*/
+.mui-bar-tab .mui-active .mui-icon ~ .mui-tab-label{
+	color: #000;
+}
+.mui-bar-tab .mui-active .mui-icon{
+	color: #ffce30;
+}
+.mui-bar-tab .mui-active .mui-icon,
+.mui-bar-tab .mui-tab-item .mui-icon ~ .mui-tab-label{
+	transition: color 0.3s ease;
+}
+/*main*/
+.main-video{
+	height: 200px;
+	background-color: #eee;
+}
+.m-detail{
+	margin: 3px 0 0 0;
+}
+.m-website{
+	margin-right: 5px;
+}
+.m-detail span{
+	font-size: 12px;
+	color: #666;
+	margin-left: 3px;
+	line-height: 30px;
+}
