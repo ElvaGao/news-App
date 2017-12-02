@@ -1,0 +1,169 @@
+{
+  "index.html": {
+    "resources": [
+      "fonts/mui-icons-extra.ttf",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/style.css",
+      "css/icons-extra.css",
+      "js/index.js",
+      "home.html"
+    ],
+    "refer": [
+      "home.html",
+      "video.html",
+      "recommend.html",
+      "me.html"
+    ]
+  },
+  "home.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "css/icons-extra.css",
+      "js/index.js",
+      "js/mui.pullToRefresh.js",
+      "js/mui.pullToRefresh.material.js",
+      "js/script.js",
+      "js/home.js",
+      "images/cbd.jpg",
+      "images/muwu.jpg",
+      "images/shuijiao.jpg",
+      "detail-article.html",
+      "detail.html",
+      "fonts/mui.ttf"
+    ],
+    "refer": [
+      "detail-article.html",
+      "detail.html"
+    ]
+  },
+  "video.html": {
+    "resources": [
+      "js/video.js",
+      "js/mui.pullToRefresh.js",
+      "js/script.js",
+      "images/muwu.jpg",
+      "js/mui.min.js",
+      "js/mui.pullToRefresh.material.js",
+      "css/mui.min.css",
+      "css/style.css"
+    ],
+    "refer": [
+      "video_detail.html",
+      "detail-article.html"
+    ]
+  },
+  "recommend.html": {
+    "resources": [
+      "css/mui.min.css",
+      "css/style.css",
+      "images/muwu.jpg"
+    ],
+    "refer": []
+  },
+  "me.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "images/logo.png",
+      "images/muwu.jpg",
+      "fonts/mui.ttf"
+    ],
+    "refer": []
+  },
+  "detail.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "detail-article.html",
+      "detail-comment.html",
+      "js/mui.pullToRefresh.js",
+      "js/detail_comment.js",
+      "images/logo.png",
+      "js/mui.pullToRefresh.material.js",
+      "js/111.js",
+      "js/jquery.js",
+      "fonts/mui.ttf"
+    ],
+    "refer": [
+      "detail-article.html",
+      "detail-comment.html"
+    ]
+  },
+  "video_detail.html": {
+    "resources": [
+      "js/mui.pullToRefresh.js",
+      "fonts/mui-icons-extra.ttf",
+      "images/logo.png",
+      "images/muwu.jpg",
+      "js/mui.min.js",
+      "js/mui.pullToRefresh.material.js",
+      "js/video_detail.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "css/icons-extra.css",
+      "home.html",
+      "reply.html",
+      "fonts/mui.ttf"
+    ],
+    "refer": [
+      "home.html",
+      "video.html",
+      "recommend.html",
+      "me.html",
+      "reply.html",
+      "reply_list.html"
+    ]
+  },
+  "reply.html": {
+    "resources": [
+      "js/reply.js",
+      "js/mui.pullToRefresh.js",
+      "fonts/mui-icons-extra.ttf",
+      "images/logo.png",
+      "js/mui.min.js",
+      "js/mui.pullToRefresh.material.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "css/icons-extra.css",
+      "reply_list.html",
+      "fonts/mui.ttf"
+    ],
+    "refer": [
+      "reply_list.html"
+    ]
+  },
+  "reply_list.html": {
+    "resources": [
+      "js/reply_list.js",
+      "js/mui.pullToRefresh.js",
+      "images/logo.png",
+      "js/mui.min.js",
+      "js/mui.pullToRefresh.material.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/style.css",
+      "css/icons-extra.css"
+    ]
+  },
+  "detail-article.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "js/111.js"
+    ]
+  },
+  "detail-comment.html": {
+    "resources": [
+      "js/mui.pullToRefresh.js",
+      "js/detail_comment.js",
+      "js/mui.min.js",
+      "js/mui.pullToRefresh.material.js"
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<!--script-->
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			//mui初始化
+			mui.init();
+			
+			mui.plusReady(function() {
+				
+				
+				var bf = plus.webview.currentWebview();
+				var web = plus.webview.create("http://ask.dcloud.net.cn/article/25","web");
+				bf.append(web);
+				web.hide();
+				web.addEventListener("loaded", function() { //注册新webview的载入完成事件
+					
+			        web.evalJS("var height1 = document.getElementsByTagName('body')[0].offsetHeight;var url1 = window.location.href+\"#\"+height1;window.open(url1,'self')");
+			        var strHeight = plus.webview.getWebviewById("web").getURL();
+//					alert(strHeight)
+					//截取后面的高度字符串
+					var arr = strHeight.split("#");
+					var webviewHeight = arr[arr.length-1];
+					
+					//把高度放到本地存储中
+					
+					localStorage.setItem("articleHeight",webviewHeight);
+			        
+					
+			    }, true);
+			    //获取创建的页面的url
+					
+//				bf.evalJS("console.log(document.body.scrollHeight);");
+				
+				
+				//建立webview窗口，为了计算高度
+//				var bf = plus.webview.create("http://www.buzzfond.com/20-secretly-revealed-powerful-photos-that-will-change-the-way-you-see-the-world/", "bf", {
+//				    top: "0"
+//				});
+//				//只为了计算高度，所以不显示
+//				bf.hide();
+//				var evalStr = "var height1 = document.getElementsByTagName('body')[0].offsetHeight;var url1 = window.location.href+\"#\"+height1;window.location.href = url1;alert(url1)";
+//				bf.evalJS(evalStr);
+////				var evalStr = "var height1 = document.getElementsByTagName('body')[0].offsetHeight;document.cookie=\"height\=\"+height1;";     
+//				//在新建的窗口计算出body高度，然后添加参数 #height  这样在获取URL时就可以取出高度
+//				setTimeout(function(){
+//					
+//					//获取创建的页面的url
+//					var strHeight = plus.webview.getWebviewById("bf").getURL();
+//					
+////					console.log(strHeight);
+//					//截取后面的高度字符串
+//					var arr = strHeight.split("#");
+//					var webviewHeight = arr[arr.length-1];
+//					alert("arr:"+arr);
+//					alert("webviewHeight:"+webviewHeight);
+////					console.log(webviewHeight);
+//					//把高度放到本地存储中
+//					plus.storage.setItem("articleHeight",webviewHeight);
+//
+//				},500)
+
+			});
+		</script>
+	</body>
+
+</html>

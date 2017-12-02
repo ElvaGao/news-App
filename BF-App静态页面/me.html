@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <title></title>
+		
+		<link href="css/mui.min.css" rel="stylesheet"/><!--mui默认样式-->
+	   	<link rel="stylesheet" type="text/css" href="css/style.css"/><!--自定义样式表-->
+		
+	</head>
+
+	<body>
+		
+		<div class="me-pic">
+			<img src="images/muwu.jpg"/>
+		</div>
+		<!--头像开始-->
+		<div class="head-portrait">
+			<img src="images/logo.png"/>
+		</div>
+		<!--头像结束-->
+		<!--settings-->
+		<ul class="mui-table-view me-list">
+		        <li class="mui-table-view-cell" id="notification">
+		            <a class="mui-navigate-right">
+		                <span class="mui-icon mui-icon-chatboxes"></span> Notifications
+		            </a>
+		        </li>
+		        <li class="mui-table-view-cell">
+		            <a class="mui-navigate-right">
+		                <span class="mui-icon mui-icon-chatboxes"></span> Saved
+		            </a>
+		        </li>
+		        <li class="mui-table-view-cell" id="settings">
+		            <a class="mui-navigate-right">
+		                <span class="mui-icon mui-icon-contact"></span> Settings
+		            </a>
+		        </li>
+		        <li class="mui-table-view-cell" id="feedbacks">
+		            <a class="mui-navigate-right">
+		                <span class="mui-icon mui-icon-email"></span> Feedbacks
+		            </a>
+		        </li>
+		    </ul>
+	</body>
+	<script src="js/mui.min.js"></script>
+	<script>
+		//推送
+		mui.plusReady(function(){
+			if(plus.os.name=="Android"){
+				Intent = plus.android.importClass("android.content.Intent");
+				File = plus.android.importClass("java.io.File");
+				Uri = plus.android.importClass("android.net.Uri");
+				main = plus.android.runtimeMainActivity();
+			}
+		});
+		/*
+		 * 打开OS系统设置－通知
+		 */
+		document.getElementById("notification").addEventListener('tap', function() {
+			if(mui.os.ios){
+		        plus.runtime.launchApplication({action: 'prefs:root=NOTIFICATIONS_ID'}, function(e){}); //需要替换包名
+		    } else {
+		    		var main = plus.android.runtimeMainActivity(); //获取activity
+				var Intent = plus.android.importClass('android.content.Intent');
+				var Settings = plus.android.importClass('android.provider.Settings');
+				var packageURI = Uri.parse("package:" + "com.tencent.mm");
+				var intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS,packageURI);//可设置表中所有Action字段
+				main.startActivity(intent); 
+		    }  
+		});
+		/*
+		 * 跳转到feedbacks
+		 */
+		document.getElementById("settings").addEventListener('tap', function() {
+			
+		});
+		/*
+		 * 跳转到feedbacks
+		 */
+		document.getElementById("feedbacks").addEventListener('tap', function() {
+			var msg = plus.messaging.createMessage(plus.messaging.TYPE_EMAIL);
+			msg.to = ['service@dcloud.io'];//接收邮件的地址
+			msg.body = 'This is an example mail';
+			msg.addAttachment("_www/imags/icon_180.png.jpg");
+			plus.messaging.sendMessage(msg,function(){
+				mui.alert("Mail has been sent successfully. Thanks.");
+			},function(){
+				mui.alert("Failed to send your message. Thank you for your support.");
+			} );
+		});
+		
+	</script>
+</html>

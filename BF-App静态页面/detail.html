@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <title></title>
+		
+		<link href="css/mui.min.css" rel="stylesheet"/><!--mui默认样式-->
+	   	<link rel="stylesheet" type="text/css" href="css/style.css"/><!--自定义样式表-->
+		
+	</head>
+	<!--文本详情页 根据url确定引入新的页面，暂时待定-->
+	<body>
+		
+		<div class="mui-content">
+		    <iframe id="article" src="#" frameborder="0" width="100%"></iframe>
+		    <div>
+		    	wepf8ijeorferferfwepf8ij
+		    	eorferferfwepf8ijeorferferf
+		    wepf8ijeorferferf
+		    wepf8ijeorferferf
+		    wepf8ijeorferferf</div>
+		</div>
+			
+	<script src="js/mui.min.js"></script>
+	<script>
+		
+		
+		mui.init();
+		var subpages = ['detail-article.html'];
+		var subpage_style = {
+			top: '0'
+		};
+		mui.plusReady(function(){
+			
+			var self = plus.webview.currentWebview();
+			var sub = plus.webview.create("http://ask.dcloud.net.cn/article/25","new",{});
+//			console.log(sub);
+			window.frames['new'].document.getElementsByTagName('body')[0]
+			self.append(sub); 
+			sub.show();
+			//预加载新页面-给予一定的时间，在新页面中计算出iframe应该有的高度
+		 	//创建子页面，首个选项卡页面显示，其它均隐藏；
+//			var self = plus.webview.currentWebview();
+//			for (var i = 0; i < 1; i++) {
+//				var temp = {};
+//				var sub = plus.webview.create(subpages[i],subpages[i]);
+//				sub.hide();
+//				self.append(sub);
+//			}
+//					
+//			setTimeout(function(){
+//				//设置出iframe的高度
+//				document.getElementById("article").height = localStorage.getItem("articleHeight");
+//					
+//				alert(localStorage.getItem("articleHeight"));
+//			},1500)
+		});
+
+	</script>
+	</body>
+
+</html>

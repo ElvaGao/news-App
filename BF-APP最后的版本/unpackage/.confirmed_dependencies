@@ -1,0 +1,424 @@
+{
+  "index.html": {
+    "resources": [
+      "js/mui.min.js",
+      "refresh.html",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "css/mui.css",
+      "js/index.js",
+      "home.html",
+      "js/castapp.js",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "video.html",
+      "follow.html",
+      "me.html",
+      "refresh.html",
+      "home.html"
+    ]
+  },
+  "refresh.html": {
+    "resources": [
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "home.html": {
+    "resources": [
+      "css/mui.min.css",
+      "js/mui.min.js",
+      "js/mui.js",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "js/mui.picker.js",
+      "js/mui.poppicker.js",
+      "js/city.data.js",
+      "js/city.data-3.js",
+      "js/castapp.js",
+      "css/slide.nav.css",
+      "list.html",
+      "js/webviewGroup.js",
+      "list1.html",
+      "js/mui.pullToRefresh.js",
+      "js/home.js",
+      "css/mui.css",
+      "js/list-refresh.js",
+      "js/script.js",
+      "images/dog1.jpg",
+      "images/dog2.jpg",
+      "images/dog5.jpg",
+      "images/dog3.jpg",
+      "images/dog4.jpg",
+      "images/dog6.jpg",
+      "images/dog7.jpg"
+    ],
+    "refer": [
+      "list.html",
+      "video.html",
+      "follow.html",
+      "me.html",
+      "list2.html",
+      "list1.html",
+      "list4.html",
+      "list5.html",
+      "list3.html",
+      "detail.html",
+      "detail_article_android.html",
+      "articleAndroid.html"
+    ]
+  },
+  "list.html": {
+    "resources": [
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/style.css",
+      "js/mui.js"
+    ],
+    "refer": []
+  },
+  "list2.html": {
+    "resources": [
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/style.css"
+    ],
+    "refer": []
+  },
+  "list1.html": {
+    "resources": [
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/mui.js"
+    ],
+    "refer": []
+  },
+  "video.html": {
+    "resources": [
+      "css/mui.min.css",
+      "js/castapp.js",
+      "js/mui.pullToRefresh.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "css/mui.css",
+      "js/home.js",
+      "js/video.js",
+      "js/list-refresh.js",
+      "js/script.js",
+      "js/videoJs.js",
+      "css/videoJs.css",
+      "images/p2.jpeg",
+      "images/p1.jpeg",
+      "images/dog1.jpg",
+      "images/dog2.jpg",
+      "images/dog3.jpg"
+    ],
+    "refer": [
+      "detail.html",
+      "detail_video.html"
+    ]
+  },
+  "me.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "js/castapp.js",
+      "js/mui.pullToRefresh.js",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "css/mui.css",
+      "js/home.js",
+      "js/mui.js",
+      "images/tx.jpg"
+    ],
+    "refer": []
+  },
+  "follow.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/style.css",
+      "css/mui.css",
+      "images/dog6.jpg",
+      "images/dog2.jpg",
+      "images/dog3.jpg",
+      "images/dog5.jpg",
+      "images/dog7.jpg",
+      "fonts/mui.ttf",
+      "images/dog4.jpg",
+      "images/dog1.jpg"
+    ],
+    "refer": []
+  },
+  "detail.html": {
+    "resources": [
+      "fonts/mui.ttf",
+      "css/style.css",
+      "css/mui.css",
+      "js/mui.js",
+      "js/detail.js",
+      "js/common.js",
+      "js/castapp.js",
+      "js/script.js",
+      "detail_inner.html"
+    ],
+    "refer": [
+      "detail_inner.html"
+    ]
+  },
+  "detail_video.html": {
+    "resources": [
+      "css/mui.min.css",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "js/mui.js",
+      "css/mui.css",
+      "js/mui.pullToRefresh.js",
+      "reply.html",
+      "js/video_detail.js",
+      "js/detail_video.js",
+      "js/castapp.js",
+      "detail_video_comment.html",
+      "js/script.js",
+      "detail_video_inner.html",
+      "images/dog1.jpg",
+      "images/p1.jpeg",
+      "images/dog2.jpg"
+    ],
+    "refer": [
+      "reply_list.html",
+      "reply.html",
+      "detail_video_comment.html",
+      "detail_video_inner.html"
+    ]
+  },
+  "reply_list.html": {
+    "resources": [
+      "js/reply_list.js",
+      "js/mui.pullToRefresh.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/style.css",
+      "js/castapp.js",
+      "reply_list_inner.html",
+      "js/script.js",
+      "css/icons-extra.css"
+    ],
+    "refer": [
+      "reply_list_inner.html"
+    ]
+  },
+  "reply.html": {
+    "resources": [
+      "js/reply.js",
+      "css/mui.min.css",
+      "js/mui.min.js",
+      "js/mui.pullToRefresh.js",
+      "css/style.css",
+      "fonts/mui.ttf",
+      "js/castapp.js",
+      "reply_inner.html",
+      "js/script.js",
+      "js/mui.js",
+      "css/icons-extra.css"
+    ],
+    "refer": [
+      "reply_list.html",
+      "reply_inner.html"
+    ]
+  },
+  "detail0.html": {
+    "resources": [
+      "js/castapp.js",
+      "fonts/mui.ttf",
+      "js/mui.js",
+      "css/mui.css",
+      "css/style.css"
+    ],
+    "refer": []
+  },
+  "detail_video_comment.html": {
+    "resources": [
+      "js/detail_video_comment.js",
+      "js/castapp.js",
+      "css/style.css",
+      "js/mui.js",
+      "css/mui.css",
+      "fonts/mui.ttf"
+    ],
+    "refer": [
+      "reply.html"
+    ]
+  },
+  "reply_inner.html": {
+    "resources": [
+      "js/castapp.js",
+      "js/mui.min.js",
+      "js/reply.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "js/reply_inner.js",
+      "js/script.js",
+      "js/mui.js",
+      "fonts/mui.ttf",
+      "fonts/mui-icons-extra.ttf"
+    ],
+    "refer": [
+      "reply_list.html"
+    ]
+  },
+  "reply_list_inner.html": {
+    "resources": [
+      "js/reply_list_inner.js",
+      "js/castapp.js",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "js/mui.js",
+      "js/script.js",
+      "fonts/mui.ttf"
+    ],
+    "refer": []
+  },
+  "detail_video_inner.html": {
+    "resources": [
+      "js/detail_video_inner.js",
+      "js/castapp.js",
+      "css/style.css",
+      "js/mui.js",
+      "css/mui.css",
+      "js/script.js",
+      "fonts/mui.ttf",
+      "fonts/mui-icons-extra.ttf",
+      "css/icons-extra.css",
+      "images/dog2.jpg",
+      "images/dog1.jpg",
+      "images/dog7.jpg",
+      "images/tx.jpg",
+      "images/p2.jpeg",
+      "images/p3.jpeg"
+    ],
+    "refer": [
+      "reply.html",
+      "detail.html",
+      "detail_video.html"
+    ]
+  },
+  "detail_inner.html": {
+    "resources": [
+      "js/detail_video_inner.js",
+      "fonts/mui-icons-extra.ttf",
+      "css/icons-extra.css",
+      "js/castapp.js",
+      "js/script.js",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "js/mui.js",
+      "css/mui.css"
+    ],
+    "refer": [
+      "reply.html"
+    ]
+  },
+  "detail_article_android.html": {
+    "resources": [
+      "js/detail_android.js",
+      "js/script.js",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "js/mui.js",
+      "css/mui.css"
+    ],
+    "refer": []
+  },
+  "articleAndroid.html": {
+    "resources": [
+      "js/articleAndroid.js",
+      "js/script.js",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "js/mui.js",
+      "css/mui.css",
+      "articleAndroidInner.html"
+    ],
+    "refer": [
+      "articleAndroidInner.html"
+    ]
+  },
+  "articleAndroidInner.html": {
+    "resources": [
+      "js/detail_video_inner.js",
+      "js/castapp.js",
+      "fonts/mui-icons-extra.ttf",
+      "js/mui.js",
+      "css/icons-extra.css",
+      "js/articleAndroidInner.js",
+      "js/script.js",
+      "css/style.css",
+      "css/mui.css",
+      "fonts/mui.ttf",
+      "js/reply_list_inner.js",
+      "images/p2.jpeg",
+      "images/p4.jpeg",
+      "images/p1.jpeg",
+      "images/p3.jpeg",
+      "images/dog2.jpg",
+      "images/dog6.jpg",
+      "images/dog3.jpg",
+      "images/tx.jpg"
+    ],
+    "refer": [
+      "reply.html",
+      "articleReply.html"
+    ]
+  },
+  "articleReply.html": {
+    "resources": [
+      "css/mui.min.css",
+      "articleReplyInner.html",
+      "js/articleReply.js",
+      "js/script.js",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "js/mui.js",
+      "css/icons-extra.css"
+    ],
+    "refer": [
+      "articleReplyInner.html"
+    ]
+  },
+  "articleReplyInner.html": {
+    "resources": [
+      "js/castapp.js",
+      "js/articleReplyInner.js",
+      "js/mui.js",
+      "fonts/mui-icons-extra.ttf",
+      "js/script.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "css/icons-extra.css"
+    ],
+    "refer": [
+      "articleReplyList.html"
+    ]
+  },
+  "articleReplyListInner.html": {
+    "resources": [
+      "js/articleReplyListInner.js"
+    ],
+    "refer": []
+  },
+  "articleReplyList.html": {
+    "resources": [
+      "js/mui.min.js",
+      "articleReplyListInner.html",
+      "js/articleReplyList.js",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "articleReplyListInner.html"
+    ]
+  }
+}
